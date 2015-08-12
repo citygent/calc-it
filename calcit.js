@@ -1,4 +1,4 @@
-var op = prompt('Choose an operation\nYou can perform (A)ddition +, (S)ubtraction -, (M)ultiplication *, or (D)ivision /').toUpperCase(); // If time, add stuff for: +-*/ 
+var op = prompt('Choose an operation\nYou can perform (A)ddition +, (S)ubtraction -, (M)ultiplication *, (D)ivision /, (P)ower ^, (SQ)uareroute q').toUpperCase(); // If time, add stuff for: ^ q
   console.log('op', op);
 var num1 = prompt('Choose your first number');
   console.log('num1', num1);
@@ -11,16 +11,16 @@ var goodNum2 = parseFloat(num2);
   console.log('gdnm2', goodNum2);
 
 
-if (op === 'A') {
+if (op === 'A' || op === '+') {
   var answer = (goodNum1 + goodNum2);
 }
-else if (op === 'S') {
+else if (op === 'S' || op === '-') {
   var answer = (goodNum1 - goodNum2);
 }
-else if (op === 'M') {
+else if (op === 'M' || op === '*') {
   var answer = (goodNum1 * goodNum2);
 }
-else if (op === 'D') {
+else if (op === 'D' || op === '/') {
   var answer = (goodNum1 / goodNum2);
 }
 // if (isNaN(goodNum1) === true) {
