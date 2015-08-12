@@ -11,31 +11,43 @@ var goodNum2 = parseFloat(num2);
   console.log('gdnm2', goodNum2);
 
 
+if (op === 'A') {
+  var answer = (goodNum1 + goodNum2);
+}
+else if (op === 'S') {
+  var answer = (goodNum1 - goodNum2);
+}
+else if (op === 'M') {
+  var answer = (goodNum1 * goodNum2);
+}
+else if (op === 'D') {
+  var answer = (goodNum1 / goodNum2);
+}
 // if (isNaN(goodNum1) === true) {
 //   alert('You have to pick a number for this to work. Try again');
 // }
 // else {
 // }
 
-//Below not great symantically?
-while (op === 'A') {
-  var answer = (goodNum1 + goodNum2)
-  break;
-}
-while (op === 'S') {
-  var answer = (goodNum1 - goodNum2)
-  break;
-}
-while (op === 'M') {
-  var answer = (goodNum1 * goodNum2)
-  break;
-}
-while (op === 'D') {
-  var answer = (goodNum1 / goodNum2)
-  break;
-}
+// //Below not great symantically?
+// while (op === 'A') {
+//   var answer = (goodNum1 + goodNum2)
+//   break;
+// }
+// while (op === 'S') {
+//   var answer = (goodNum1 - goodNum2)
+//   break;
+// }
+// while (op === 'M') {
+//   var answer = (goodNum1 * goodNum2)
+//   break;
+// }
+// while (op === 'D') {
+//   var answer = (goodNum1 / goodNum2)
+//   break;
+// }
 
-// alert('The answer is ' + answer)
+alert('The answer is ' + answer);
 // var again = prompt('Would you like to perform another calculation? Y/N')
 // if (again = 'Y') {
 //   Location.reload(true);
