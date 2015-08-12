@@ -23,8 +23,11 @@ else if (op === 'M' || op === '*') {
 else if (op === 'D' || op === '/') {
   var answer = (goodNum1 / goodNum2);
 }
+else if (op === 'P' || op === '^') {
+  var answer = Math.pow(goodNum1, goodNum2);
+}
 else if (op === 'Q') {
-  var answer = Math.sqrt(goodNum1)
+  var answer = Math.sqrt(goodNum1);
 }
 
 // if (isNaN(goodNum1) === true) {
