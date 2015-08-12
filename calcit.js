@@ -1,4 +1,4 @@
-var op = prompt('Choose an operation\nYou can perform (A)ddition +, (S)ubtraction -, (M)ultiplication *, (D)ivision /, (P)ower ^, (SQ)uareroute q').toUpperCase(); // If time, add stuff for: ^ q
+var op = prompt('Choose an operation. This calculator can do\n(A)ddition +, (S)ubtraction -, (M)ultiplication *, (D)ivision /, (P)ower ^, or s(Q)uareroute \u221A').toUpperCase(); 
   console.log('op', op);
 var num1 = prompt('Choose your first number');
   console.log('num1', num1);
@@ -23,6 +23,10 @@ else if (op === 'M' || op === '*') {
 else if (op === 'D' || op === '/') {
   var answer = (goodNum1 / goodNum2);
 }
+else if (op === 'Q') {
+  var answer = Math.sqrt(goodNum1)
+}
+
 // if (isNaN(goodNum1) === true) {
 //   alert('You have to pick a number for this to work. Try again');
 // }
@@ -46,7 +50,6 @@ else if (op === 'D' || op === '/') {
 //   var answer = (goodNum1 / goodNum2)
 //   break;
 // }
-
 alert('The answer is ' + answer);
 // var again = prompt('Would you like to perform another calculation? Y/N')
 // if (again = 'Y') {
