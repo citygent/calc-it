@@ -18,6 +18,11 @@ var goodNum2 = parseFloat(num2);
 // }
 while (op === 'A') {
   var answer = (goodNum1 + goodNum2)
-  alert('The answer is ' + answer)
   break;
 }
+while (op === 'S') {
+  var answer = (goodNum1 - goodNum2)
+  break;
+}
+while
+  alert('The answer is ' + answer)
