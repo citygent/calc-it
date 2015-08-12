@@ -1,4 +1,4 @@
-var op = prompt('Choose an operation\nYou can perform (A)ddition, (S)ubtraction, (M)ultiplication, or (D)ivision');
+var op = prompt('Choose an operation\nYou can perform (A)ddition +, (S)ubtraction -, (M)ultiplication *, or (D)ivision /').toUpperCase(); // If time, add stuff for: +-*/ 
   console.log('op', op);
 var num1 = prompt('Choose your first number');
   console.log('num1', num1);
@@ -16,6 +16,8 @@ var goodNum2 = parseFloat(num2);
 // }
 // else {
 // }
+
+//Below not great symantically?
 while (op === 'A') {
   var answer = (goodNum1 + goodNum2)
   break;
@@ -24,5 +26,20 @@ while (op === 'S') {
   var answer = (goodNum1 - goodNum2)
   break;
 }
-while
-  alert('The answer is ' + answer)
+while (op === 'M') {
+  var answer = (goodNum1 * goodNum2)
+  break;
+}
+while (op === 'D') {
+  var answer = (goodNum1 / goodNum2)
+  break;
+}
+
+// alert('The answer is ' + answer)
+// var again = prompt('Would you like to perform another calculation? Y/N')
+// if (again = 'Y') {
+//   Location.reload(true);
+// }
+// else {
+
+// }
